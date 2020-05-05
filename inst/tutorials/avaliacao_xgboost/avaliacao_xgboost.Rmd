@@ -1,0 +1,65 @@
+---
+title: '`r htmltools::HTML("<img src = \"https://d33wubrfki0l68.cloudfront.net/295643c6243701ae6a9bac3fb8ad467ff0ce3c84/d1785/img/logo/cursor1-41.png\" width = \"70%\">")`'
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+nome_do_curso = "Workshop de XGBoost"
+```
+
+<h2>Avaliação de Pré-requisitos: `r nome_do_curso`</h2>
+
+Seja bem-vindo à avaliação de pré-requisitos para o `r nome_do_curso`. Esse questionário é um instrumento para seu próprio uso com a finalidade de lhe fornecer insumos no momendo de decidir investir seus recursos nos nossos cursos. A Curso-R não irá guardar os resultados e você poderá respondê-lo quantas vezes desejar.
+
+## R Básico
+
+### Data.frames
+
+```{r data_frame_q01}
+quiz(caption = NULL,
+  questao(
+    "Selecione todas as afirmativas **Verdadeiras** sobre data.frame no R",
+    answer("Todo data.frame é uma list.", correct = TRUE),
+    answer("data.frame é um objeto do R que representa uma tabela.", correct = TRUE),
+    answer("data.frame e matrix são objetos equivalentes.", correct = FALSE),
+    answer("iris$Species[1:10] é um código válido", correct = TRUE)
+  )
+)
+```
+
+## Tidyverse
+
+### Operador pipe (%>%)
+
+```{r pipe_q01}
+quiz(caption = NULL,
+  questao(
+    text = "Qual expressão abaixo é equivalente a `mean(log(x), na.rm = TRUE)`?", 
+    answer("x %>% log() %>% mean(na.rm = TRUE)", correct = TRUE),
+    answer("x %>% log(x) %>% mean(x, na.rm = TRUE)"),
+    answer("mean(na.rm = TRUE) %>% log() %>% x"),
+    answer("x %>% mean(na.rm = TRUE) %>% log()"),
+    random_answer_order = TRUE
+  ),
+  
+  questao(
+    text = "Qual expressão abaixo é equivalente a `mtcars %>% select(mpg) %>% filter(mpg > 20)`?", 
+    answer("filter(select(mtcars, mpg), mpg > 20)", correct = TRUE),
+    answer("select(filter(mtcars, mpg > 20), mpg)"),
+    answer("select(mtcars, filter(mpg > 20), mpg)"),
+    answer("filter(select(mtcars, mpg, mpg > 20))"),
+    random_answer_order = TRUE
+  )
+)
+```
+
+
+## Machine Learning
+
+## Estatística Básica
