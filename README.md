@@ -3,5 +3,4 @@
 
 # avaliacoesPreCurso
 
-Pacote que reune as avaliações pré-curso. Cada função é um shiny app do
-`{learnr}`.
+Pacote que reune as avaliações pré-curso.
