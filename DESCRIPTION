@@ -1,5 +1,5 @@
 Package: avaliacoesPreCurso
-Title: What the Package Does (One Line, Title Case)
+Title: Pacote que reune as avaliações pré-curso.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
@@ -18,3 +18,5 @@ RoxygenNote: 7.1.0
 Imports: 
     learnr,
     magrittr
+URL: https://github.com/curso-r/avaliacoesPreCurso
+BugReports: https://github.com/curso-r/avaliacoesPreCurso/issues
